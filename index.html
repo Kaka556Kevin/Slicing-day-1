@@ -57,7 +57,7 @@
       transition: all 0.3s ease;
     }
     .btn-signup:hover{
-      background:#333333;
+      background:#248a95;
       box-shadow:0 6px 16px rgba(43, 154, 167, 0.35);
       transform: translateY(-2px);
     }
@@ -170,6 +170,13 @@
       align-items:flex-start;
       flex-direction:column;
       gap:18px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .benefits.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .benefits-inner {
@@ -255,6 +262,13 @@
       flex-direction:column;
       gap:18px;
       background: transparent;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .testimonials.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .testimonials-inner {
@@ -318,6 +332,13 @@
       align-items:flex-start;
       flex-direction:column;
       gap:18px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .pricing.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .pricing-inner {
@@ -381,6 +402,13 @@
       align-items:flex-start;
       flex-direction:column;
       gap:18px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .faq.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .faq-inner {
@@ -471,7 +499,7 @@
     .footer {
       padding:40px 0;
       background:#fafafa;
-      width:99.9vw;
+      width:100vw;
       position:relative;
       left:50%;
       right:50%;
@@ -659,6 +687,22 @@
 
   <script>
     (function(){ var y=new Date().getFullYear(); document.getElementById('year').textContent = y; })();
+
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    const sections = document.querySelectorAll('.benefits, .testimonials, .pricing, .faq');
+    sections.forEach(section => observer.observe(section));
   </script>
 </body>
 </html>
