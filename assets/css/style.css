@@ -442,12 +442,23 @@ a {
     justify-content: center; 
     margin-bottom: 40px;
     flex-wrap: wrap;
+    gap: 25px;
   }
   
   .stat-item {
+    border-right: 1px solid #ddd;
+    padding-right: 25px;
+    padding-left: 0;
+    text-align: center;
+  }
+  
+  .stat-item:last-child {
     border-right: none;
     padding-right: 0;
-    text-align: center;
+  }
+  
+  .stat-num {
+    justify-content: center;
   }
   
   .hero-img-container { 
