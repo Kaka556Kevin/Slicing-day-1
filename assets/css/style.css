@@ -20,7 +20,6 @@ a {
   text-decoration: none; 
 }
 
-/* ========== NAVBAR ========== */
 .navbar {
   padding: 25px 0;
   background: #fff;
@@ -116,7 +115,6 @@ a {
   color: var(--primary) !important;
 }
 
-/* ========== HERO SECTION ========== */
 .hero-section {
   padding-top: 40px;
   padding-bottom: 80px;
@@ -267,7 +265,6 @@ a {
   opacity: 2;
 }
 
-/* ========== SECTIONS ========== */
 .site-inner {
   max-width: 1280px;
   margin: 0 auto;
@@ -345,7 +342,6 @@ a {
   transform: translateY(-4px); 
 }
 
-/* ========== FAQ SPECIFIC ========== */
 .faq-inner { 
   display: flex; 
   gap: 28px; 
@@ -365,7 +361,6 @@ a {
   gap: 12px; 
 }
 
-/* ========== FOOTER ========== */
 .footer {
   background: #fafafa; 
   padding: 60px 0; 
@@ -420,7 +415,6 @@ a {
   color: #999; 
 }
 
-/* ========== RESPONSIVE ========== */
 @media(max-width: 991px) {
   .hero-title { 
     font-size: 3rem; 
