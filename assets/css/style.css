@@ -10,7 +10,6 @@
   --pricing-cta-end: #ff7a00;
 }
 
-/* --- FIX GLOBAL LAYOUT --- */
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -57,23 +56,21 @@ a {
   margin-left: 0 !important;
 }
 
-/* --- NEW: HOVER MENU NAVIGASI --- */
 .nav-link {
   color: #555 !important;
   font-weight: 500;
   font-size: 15px;
   transition: color 0.3s ease;
   padding: 0 !important;
-  position: relative; /* Penting untuk garis bawah */
+  position: relative;
 }
 
-/* Efek Garis Bawah Berjalan */
 .nav-link::after {
   content: '';
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 0; /* Awalnya 0 */
+  width: 0;
   height: 2px;
   background-color: var(--primary);
   transition: width 0.3s ease;
@@ -84,7 +81,7 @@ a {
 }
 
 .nav-link:hover::after {
-  width: 100%; /* Memanjang saat hover */
+  width: 100%;
 }
 
 .navbar-actions {
@@ -102,7 +99,7 @@ a {
   font-weight: 600;
   font-size: 15px;
   border: none;
-  transition: all 0.3s ease; /* Tambah transisi */
+  transition: all 0.3s ease;
 }
 
 .btn-signup-nav:hover {
@@ -123,7 +120,7 @@ a {
 
 .btn-login-nav:hover {
   color: var(--primary) !important;
-  transform: translateX(2px); /* Geser dikit */
+  transform: translateX(2px);
 }
 
 /* Hero Section */
@@ -166,19 +163,18 @@ a {
   margin-bottom: 3rem;
 }
 
-/* --- NEW: HOVER SIGN IN & LEARN MORE --- */
 .link-signin {
   color: #111;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
-  transition: all 0.3s ease; /* Tambah transisi */
+  transition: all 0.3s ease;
   display: inline-block;
 }
 
 .link-signin:hover {
   color: var(--primary);
-  transform: translateX(5px); /* Efek geser kanan */
+  transform: translateX(5px);
 }
 
 .btn-learn-more {
@@ -189,13 +185,13 @@ a {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease; /* Tambah transisi */
+  transition: all 0.3s ease;
 }
 
 .btn-learn-more:hover {
-  background-color: #8ec3c9; /* Warna lebih gelap dikit */
-  box-shadow: 0 8px 20px rgba(169, 214, 218, 0.5); /* Shadow halus */
-  transform: translateY(-3px); /* Efek naik */
+  background-color: #8ec3c9;
+  box-shadow: 0 8px 20px rgba(169, 214, 218, 0.5); 
+  transform: translateY(-3px); 
 }
 
 /* Stats */
@@ -233,7 +229,6 @@ a {
 .viewall:hover { background: #f9f9f9; border-color: var(--primary); }
 
 
-/* ===== BENEFITS SECTION ===== */
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -298,11 +293,6 @@ a {
 .pricing-toggle { display: flex; gap: 8px; align-items:center; }
 .toggle-btn { border-radius: 8px; padding: 8px 14px; border: 1px solid #eee; background: #fff; font-weight: 700; cursor: pointer; }
 .toggle-btn.active { background: var(--pricing-cta-end); color: #fff; border-color: var(--primary-dark); }
-
-
-/* ==================================================== */
-/* ===== FAQ SECTION  ================================= */
-/* ==================================================== */
 
 .faq-section {
   background-color: #fff;
@@ -461,15 +451,9 @@ a {
   .footer-top { flex-direction: column; text-align: center; align-items: center; }
 }
 
-
-/* ==================================================== */
-/* ===== RESPONSIVE & MOBILE FIXES (FINAL) ============ */
-/* ==================================================== */
-
-/* Tablet & Mobile (max-width: 991px) */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 991px) {
   
-  /* --- 1. NAVBAR FIX (Dropdown Rapi) --- */
   .navbar-collapse {
     background-color: #fff; 
     padding: 20px 0;
@@ -486,7 +470,7 @@ a {
   }
   
   .navbar-actions {
-    flex-direction: column; /* Tombol stack ke bawah */
+    flex-direction: column; 
     gap: 15px;
     padding: 0 20px;
     width: 100%;
@@ -494,12 +478,11 @@ a {
   
   .btn-login-nav, 
   .btn-signup-nav {
-    width: 100%; /* Tombol lebar penuh */
+    width: 100%; 
     justify-content: center;
     padding: 12px;
   }
 
-  /* --- 2. HERO FIX --- */
   .hero-section {
     padding-top: 120px; 
     padding-bottom: 60px;
@@ -533,7 +516,6 @@ a {
     padding-right: 0;
   }
   
-  /* Hero Images (Safe Scaling) */
   .hero-img-container {
     height: auto; 
     min-height: auto;
@@ -558,7 +540,6 @@ a {
     bottom: -5%; right: -5%; z-index: 3; opacity: 1;
   }
 
-  /* --- 3. FAQ FIX --- */
   .faq-layout {
     flex-direction: column;
     gap: 50px;
@@ -571,34 +552,28 @@ a {
   .faq-heading { font-size: 32px; }
   .faq-heading br { display: inline; }
   .faq-right { width: 100%; }
-
-  /* Grid Adjustments */
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }
   .testimonials-grid, .pricing-grid { grid-template-columns: 1fr; }
 }
 
-/* Mobile Small (max-width: 576px) */
 @media (max-width: 576px) {
-  
-  /* --- 4. SECTION HEADER FIX (Title & Button Stack) --- */
   .benefits-header, 
   .testimonials-header, 
   .pricing-header {
-    flex-direction: column; /* Stack ke bawah */
+    flex-direction: column; 
     align-items: flex-start;
     gap: 15px;
   }
   
   .title, .testimonials-title, .pricing-title, .faq-heading {
-    font-size: 28px; /* Perkecil font */
+    font-size: 28px; 
   }
   
   .viewall, .faq-action {
-    width: 100%; /* Tombol lebar penuh */
+    width: 100%; 
     text-align: center;
   }
 
-  /* --- Lain-lain --- */
   .hero-title { font-size: 2.5rem; }
 
   .stats-container {
@@ -622,11 +597,6 @@ a {
   
   .faq-q { font-size: 16px; }
 }
-
-
-/* ==================================================== */
-/* ===== UNIVERSAL HOVER EFFECTS (GLOBAL) ============= */
-/* ==================================================== */
 
 /* 1. Benefits Button (Panah Kotak) */
 .benefit-cta {
