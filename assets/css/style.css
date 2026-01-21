@@ -10,9 +10,10 @@
   --pricing-cta-end: #ff7a00;
 }
 
+/* --- FIX GLOBAL LAYOUT --- */
 html, body {
   width: 100%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -56,17 +57,34 @@ a {
   margin-left: 0 !important;
 }
 
+/* --- NEW: HOVER MENU NAVIGASI --- */
 .nav-link {
   color: #555 !important;
   font-weight: 500;
   font-size: 15px;
   transition: color 0.3s ease;
   padding: 0 !important;
-  position: relative;
+  position: relative; /* Penting untuk garis bawah */
+}
+
+/* Efek Garis Bawah Berjalan */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0; /* Awalnya 0 */
+  height: 2px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover { 
-  color: #111 !important; 
+  color: var(--primary) !important; 
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Memanjang saat hover */
 }
 
 .navbar-actions {
@@ -84,10 +102,13 @@ a {
   font-weight: 600;
   font-size: 15px;
   border: none;
+  transition: all 0.3s ease; /* Tambah transisi */
 }
 
 .btn-signup-nav:hover {
   background-color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(43, 154, 167, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-login-nav {
@@ -97,10 +118,12 @@ a {
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: all 0.3s ease;
 }
 
 .btn-login-nav:hover {
   color: var(--primary) !important;
+  transform: translateX(2px); /* Geser dikit */
 }
 
 /* Hero Section */
@@ -143,11 +166,19 @@ a {
   margin-bottom: 3rem;
 }
 
+/* --- NEW: HOVER SIGN IN & LEARN MORE --- */
 .link-signin {
   color: #111;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  transition: all 0.3s ease; /* Tambah transisi */
+  display: inline-block;
+}
+
+.link-signin:hover {
+  color: var(--primary);
+  transform: translateX(5px); /* Efek geser kanan */
 }
 
 .btn-learn-more {
@@ -158,6 +189,13 @@ a {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease; /* Tambah transisi */
+}
+
+.btn-learn-more:hover {
+  background-color: #8ec3c9; /* Warna lebih gelap dikit */
+  box-shadow: 0 8px 20px rgba(169, 214, 218, 0.5); /* Shadow halus */
+  transform: translateY(-3px); /* Efek naik */
 }
 
 /* Stats */
@@ -433,7 +471,7 @@ a {
   
   /* --- 1. NAVBAR FIX (Dropdown Rapi) --- */
   .navbar-collapse {
-    background-color: #fff; /* Background putih */
+    background-color: #fff; 
     padding: 20px 0;
     margin-top: 15px;
     border-top: 1px solid #f5f5f5;
