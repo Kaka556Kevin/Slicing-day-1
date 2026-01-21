@@ -4,27 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GlobalTalk</title>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="assets/css/style.css">
-  
-  <style>
-    @media (max-width: 767px) {
-      .faq-inner {
-        flex-direction: column !important;
-      }
-      .faq-visual {
-        width: 100%;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -39,9 +25,9 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Main</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Guide</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Statistics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hero">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="#benefits">Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Statistics</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Games <span style="font-size: 12px;">▼</span></a>
             </li>
@@ -56,10 +42,9 @@
   </header>
 
   <main>
-    <section class="hero-section">
+    <section id="hero" class="hero-section">
       <div class="container">
         <div class="row align-items-center">
-          
           <div class="col-lg-5">
             <span class="eyebrow">E-COURSE PLATFORM</span>
             <h1 class="hero-title">
@@ -79,7 +64,7 @@
             <div class="stats-container d-flex gap-4">
               <div class="stat-item">
                 <div class="stat-num d-flex align-items-center gap-2">
-                  <svg class="bolt-icon" viewBox="0 0 24 24" fill="#2b9aa7">
+                  <svg class="bolt-icon" viewBox="0 0 24 24" fill="#2b9aa7" aria-hidden="true">
                     <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" />
                   </svg>
                   700+
@@ -88,7 +73,7 @@
               </div>
               <div class="stat-item">
                 <div class="stat-num d-flex align-items-center gap-2">
-                  <svg class="bolt-icon" viewBox="0 0 24 24" fill="#2b9aa7">
+                  <svg class="bolt-icon" viewBox="0 0 24 24" fill="#2b9aa7" aria-hidden="true">
                     <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" />
                   </svg>
                   575k+
@@ -105,7 +90,6 @@
               <img src="assets/images/plant.png" alt="" class="img-plant">
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -119,7 +103,62 @@
           </div>
           <a href="#" class="viewall">View All</a>
         </div>
-        <img class="section-img" src="assets/images/Benefits-Section.png" alt="Benefits" />
+
+        <div class="benefits-grid">
+          <div class="benefit">
+            <div class="benefit-number">01</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Flexible Learning Schedule</h4>
+              <p class="benefit-desc">Fit your coursework around your existing commitments and obligations.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-number">02</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Expert Instruction</h4>
+              <p class="benefit-desc">Learn from industry experts who have hands-on experience in design and development.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-number">03</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Diverse Course Offerings</h4>
+              <p class="benefit-desc">Explore a wide range of design and development courses covering various topics.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-number">04</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Updated Curriculum</h4>
+              <p class="benefit-desc">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-number">05</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Practical Projects and Assignments</h4>
+              <p class="benefit-desc">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit-number">06</div>
+            <div class="benefit-body">
+              <h4 class="benefit-title">Interactive Learning Environment</h4>
+              <p class="benefit-desc">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+            </div>
+            <button aria-label="Learn more" class="benefit-cta"><i class="bi bi-arrow-up"></i></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -132,7 +171,52 @@
           </div>
           <a href="#" class="viewall">Read All</a>
         </div>
-        <img class="section-img" src="assets/images/testimonials-section.png" alt="Testimonials" />
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-text">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+            <div class="testimonial-meta">
+              <div class="meta-left">
+                <img src="assets/images/avatar-1.png" alt="Sarah L" class="meta-avatar">
+                <div class="meta-name">Sarah L</div>
+              </div>
+              <button class="btn-small">Read Full Story</button>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+            <div class="testimonial-meta">
+              <div class="meta-left">
+                <img src="assets/images/avatar-2.png" alt="Jason M" class="meta-avatar">
+                <div class="meta-name">Jason M</div>
+              </div>
+              <button class="btn-small">Read Full Story</button>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+            <div class="testimonial-meta">
+              <div class="meta-left">
+                <img src="assets/images/avatar-3.png" alt="Emily R" class="meta-avatar">
+                <div class="meta-name">Emily R</div>
+              </div>
+              <button class="btn-small">Read Full Story</button>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+            <div class="testimonial-meta">
+              <div class="meta-left">
+                <img src="assets/images/avatar-4.png" alt="Michael K" class="meta-avatar">
+                <div class="meta-name">Michael K</div>
+              </div>
+              <button class="btn-small">Read Full Story</button>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -143,26 +227,135 @@
             <h2 class="pricing-title">Our Pricing</h2>
             <p class="pricing-desc mt-2">Choose a plan that fits your learning goals.</p>
           </div>
-          <a href="#" class="viewall">See Plans</a>
+          <div class="pricing-toggle">
+            <button class="toggle-btn active" data-mode="monthly">Monthly</button>
+            <button class="toggle-btn" data-mode="yearly">Yearly</button>
+          </div>
         </div>
-        <img class="section-img" src="assets/images/pricing-section.png" alt="Pricing" />
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-tag">Free Plan</div>
+            <div class="pricing-price"><span class="currency">$</span><span class="amount">0</span><span class="period">/month</span></div>
+
+            <div class="pricing-features">
+              <ul>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Access to selected free courses.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Limited course materials and resources.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Basic community support.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> No certification upon completion.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Ad-supported platform.</li>
+                <li class="feature no"><span class="feature-icon"><i class="bi bi-x-lg"></i></span> Access to exclusive Pro Plan community forums.</li>
+                <li class="feature no"><span class="feature-icon"><i class="bi bi-x-lg"></i></span> Early access to new courses and updates.</li>
+              </ul>
+            </div>
+
+            <button class="btn-cta">Get Started</button>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="pricing-tag">Pro Plan</div>
+            <div class="pricing-price"><span class="currency">$</span><span class="amount">79</span><span class="period">/month</span></div>
+
+            <div class="pricing-features">
+              <ul>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Unlimited access to all courses.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Unlimited course materials and resources.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Priority support from instructors.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Course completion certificates.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Ad-free experience.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Access to exclusive Pro Plan community forums.</li>
+                <li class="feature ok"><span class="feature-icon"><i class="bi bi-check2"></i></span> Early access to new courses and updates.</li>
+              </ul>
+            </div>
+
+            <button class="btn-cta">Get Started</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="faq" class="faq mt-5 py-4">
+    <section id="faq" class="faq-section mt-5 py-4">
       <div class="container">
-        <div class="faq-inner d-flex gap-4 align-items-start mt-3 flex-row-reverse">
-          <div class="faq-content flex-fill d-flex flex-column gap-3">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            <p class="faq-desc">Quick answers to common questions about courses, payment, and access. If you still have questions, please contact our support team.</p>
-            <a href="#" class="faq-action">See FAQs</a>
+        <div class="faq-layout">
+          <div class="faq-left">
+            <h2 class="faq-heading">Frequently<br>Asked Questions</h2>
+            <p class="faq-subtext">Still you have any questions? Contact our Team via support@globaltalk.com</p>
+            <a href="#" class="faq-see-all">See All FAQ's</a>
           </div>
-          <div class="faq-visual">
-            <img class="section-img" src="assets/images/faq-items.svg" alt="FAQ" />
+
+          <div class="faq-right">
+            <div class="accordion-list">
+              
+              <div class="faq-item">
+                <div class="faq-header active">
+                  <span class="faq-q">Can I enroll in multiple courses at once?</span>
+                  <button class="faq-toggle">
+                    <i class="bi bi-x-lg"></i>
+                  </button>
+                </div>
+                <div class="faq-body" style="display:block;">
+                  <p class="faq-answer">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                  <div class="faq-link-wrapper">
+                    <a href="#" class="faq-link">Enrollment Process for Different Courses <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <span class="faq-q">What kind of support can I expect from instructors?</span>
+                  <button class="faq-toggle">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="faq-body">
+                  <p class="faq-answer">Instructors provide timely feedback, office hours, and dedicated forum support to ensure you succeed in your learning journey.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <span class="faq-q">Are the courses self-paced or do they have specific start and end dates?</span>
+                  <button class="faq-toggle">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="faq-body">
+                  <p class="faq-answer">We offer both: self-paced modules for flexibility and cohort-based courses with defined schedules for structure.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <span class="faq-q">Are there any prerequisites for the courses?</span>
+                  <button class="faq-toggle">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="faq-body">
+                  <p class="faq-answer">Prerequisites vary by course. Please check the specific course description page for detailed requirements.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-header">
+                  <span class="faq-q">Can I download the course materials for offline access?</span>
+                  <button class="faq-toggle">
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div class="faq-body">
+                  <p class="faq-answer">Yes, many of our courses allow downloads. Premium plans also include full offline access via our mobile app.</p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer mt-5">
@@ -180,7 +373,7 @@
             <i class="bi bi-geo-alt"></i> Somewhere in the World
           </p>
         </div>
-        
+
         <div class="footer-links-group">
           <h5 class="footer-heading">Home</h5>
           <a href="#benefits" class="footer-link d-block mb-2">Benefits</a>
@@ -188,30 +381,24 @@
           <a href="#testimonials" class="footer-link d-block mb-2">Our Testimonials</a>
           <a href="#faq" class="footer-link d-block">Our FAQ</a>
         </div>
-        
+
         <div class="footer-links-group">
           <h5 class="footer-heading">About Us</h5>
           <a href="#" class="footer-link d-block mb-2">Company</a>
           <a href="#" class="footer-link d-block mb-2">Achievements</a>
           <a href="#" class="footer-link d-block">Our Goals</a>
         </div>
-        
+
         <div class="footer-links-group">
           <h5 class="footer-heading">Social Profiles</h5>
           <div class="social-icons d-flex gap-3">
-            <a href="#" class="social-icon">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="#" class="social-icon">
-              <i class="bi bi-linkedin"></i>
-            </a>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
       </div>
-      
+
       <div class="footer-bottom mt-5 text-center">
         © <span id="year"></span> kevin. All rights reserved.
       </div>
@@ -219,32 +406,102 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    (function(){ 
-      var y = new Date().getFullYear(); 
-      document.getElementById('year').textContent = y; 
-    })();
 
+  <script>
+    (function(){ document.getElementById('year').textContent = new Date().getFullYear(); })();
+
+    /* smooth scroll for anchors */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href !== '#' && href.length > 1) {
           e.preventDefault();
           const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+    /* Pricing toggle */
+    document.querySelectorAll('.toggle-btn').forEach(b=>{
+      b.addEventListener('click', ()=> {
+        document.querySelectorAll('.toggle-btn').forEach(t=>t.classList.remove('active'));
+        b.classList.add('active');
+        const mode = b.dataset.mode;
+        document.querySelectorAll('.pricing-card .amount').forEach(el=>{
+          if(mode === 'monthly'){
+            if(el.closest('.featured')) el.textContent = '79';
+            else el.textContent = '0';
+            el.nextElementSibling && (el.nextElementSibling.textContent = '/month');
+          } else {
+            if(el.closest('.featured')) el.textContent = '790';
+            else el.textContent = '0';
+            el.nextElementSibling && (el.nextElementSibling.textContent = '/year');
+          }
+        });
       });
-    }, { threshold: 0.15 });
+    });
 
-    document.querySelectorAll('.benefits, .testimonials, .pricing, .faq').forEach(section => observer.observe(section));
+    /* FAQ Logic (Updated for new structure) */
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const header = item.querySelector('.faq-header');
+      const body = item.querySelector('.faq-body');
+      const toggleBtn = item.querySelector('.faq-toggle');
+      const icon = toggleBtn.querySelector('i');
+
+      header.addEventListener('click', () => {
+        const isActive = header.classList.contains('active');
+
+        // Close all others
+        faqItems.forEach(otherItem => {
+            const otherHeader = otherItem.querySelector('.faq-header');
+            const otherBody = otherItem.querySelector('.faq-body');
+            const otherIcon = otherItem.querySelector('.faq-toggle i');
+            
+            if(otherItem !== item) {
+                otherHeader.classList.remove('active');
+                otherBody.style.display = 'none';
+                otherIcon.classList.remove('bi-x-lg');
+                otherIcon.classList.add('bi-plus-lg');
+            }
+        });
+
+        // Toggle current
+        if (isActive) {
+          header.classList.remove('active');
+          body.style.display = 'none';
+          icon.classList.remove('bi-x-lg');
+          icon.classList.add('bi-plus-lg');
+        } else {
+          header.classList.add('active');
+          body.style.display = 'block';
+          icon.classList.remove('bi-plus-lg');
+          icon.classList.add('bi-x-lg');
+        }
+      });
+    });
+
+    /* Navbar Fixed Adjust */
+    (function adjustBodyForFixedNavbar(){
+      const nav = document.querySelector('.navbar');
+      if(!nav) return;
+      function applyPadding(){
+        const style = window.getComputedStyle(nav);
+        const isFixed = style.position === 'fixed' || nav.classList.contains('fixed-top');
+        if(isFixed){
+          document.body.style.paddingTop = nav.offsetHeight + 'px';
+          nav.style.zIndex = 1100;
+          nav.classList.add('fixed-top');
+        } else {
+          document.body.style.paddingTop = '';
+        }
+      }
+      window.addEventListener('load', applyPadding);
+      window.addEventListener('resize', applyPadding);
+      applyPadding();
+    })();
   </script>
 </body>
 </html>
