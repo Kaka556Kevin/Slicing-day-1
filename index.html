@@ -410,7 +410,6 @@
   <script>
     (function(){ document.getElementById('year').textContent = new Date().getFullYear(); })();
 
-    /* smooth scroll for anchors */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -422,7 +421,6 @@
       });
     });
 
-    /* Pricing toggle */
     document.querySelectorAll('.toggle-btn').forEach(b=>{
       b.addEventListener('click', ()=> {
         document.querySelectorAll('.toggle-btn').forEach(t=>t.classList.remove('active'));
@@ -442,7 +440,6 @@
       });
     });
 
-    /* FAQ Logic (Updated for new structure) */
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach(item => {
@@ -454,7 +451,6 @@
       header.addEventListener('click', () => {
         const isActive = header.classList.contains('active');
 
-        // Close all others
         faqItems.forEach(otherItem => {
             const otherHeader = otherItem.querySelector('.faq-header');
             const otherBody = otherItem.querySelector('.faq-body');
@@ -468,7 +464,6 @@
             }
         });
 
-        // Toggle current
         if (isActive) {
           header.classList.remove('active');
           body.style.display = 'none';
@@ -483,7 +478,6 @@
       });
     });
 
-    /* Navbar Fixed Adjust */
     (function adjustBodyForFixedNavbar(){
       const nav = document.querySelector('.navbar');
       if(!nav) return;

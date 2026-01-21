@@ -10,10 +10,9 @@
   --pricing-cta-end: #ff7a00;
 }
 
-/* --- FIX GLOBAL LAYOUT (PENTING UNTUK HP) --- */
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Mencegah scroll horizontal */
+  overflow-x: hidden; 
   position: relative;
 }
 
